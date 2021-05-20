@@ -54,4 +54,10 @@ rl.on('line', line => {
     const unnecessary_file = all_file.filter(f => !all_required_file.includes(f));
 
     console.log(`==RESULT==\n\nMissing:\n${missing_file.map(s => `    * ${s}\n          Used tile --> ${file_usage[s].join(', ')}`).join('\n')}\nUnnecessary:\n${unnecessary_file.map(s => `    * ${s}`).join('\n')}`);
+
+    console.log('\nEnter를 눌러 종료하세요.');
+    const pause = readline.createInterface({
+        input: process.stdin,
+        output: process.stdout
+    }).on('line', () => pause.close());
 });
