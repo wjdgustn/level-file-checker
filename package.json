@@ -1,0 +1,23 @@
+{
+  "name": "level-file-checker",
+  "version": "1.0.0",
+  "description": "ADOFAI background, decoration file checker.",
+  "main": "cli.js",
+  "scripts": {
+    "test": "node cli.js",
+    "build": "npx pkg cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjdgustn/level-file-checker.git"
+  },
+  "author": "HYONSU",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/wjdgustn/level-file-checker/issues"
+  },
+  "homepage": "https://github.com/wjdgustn/level-file-checker#readme",
+  "devDependencies": {
+    "pkg": "^5.1.0"
+  }
+}
