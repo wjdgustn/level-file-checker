@@ -19,5 +19,8 @@
   "homepage": "https://github.com/wjdgustn/level-file-checker#readme",
   "devDependencies": {
     "pkg": "^5.1.0"
+  },
+  "dependencies": {
+    "json5": "^2.2.0"
   }
 }
