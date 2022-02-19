@@ -41,7 +41,7 @@ rl.on('line', line => {
     all_file.splice(all_file.indexOf(level.settings.previewIcon), 1);
     all_file.splice(all_file.indexOf(level.settings.bgImage), 1);
 
-    const EventFilter = [ 'AddDecoration' , 'MoveDecoration' , 'CustomBackground' ];
+    const EventFilter = [ 'AddDecoration' , 'MoveDecorations' , 'CustomBackground' ];
     for(let e of level.actions.filter(e => EventFilter.includes(e.eventType))) {
         const filename = e.decText || e.bgImage || e.decorationImage;
         if(!filename) continue;
